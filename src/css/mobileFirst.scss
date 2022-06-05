@@ -1,0 +1,98 @@
+@import url(base/_base);
+@import url(mixin/_mixin.scss);
+
+// Підключення шрифтів
+
+body{
+	font-family:'Libre Franklin', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: white;
+}
+h1{
+	font-size: 20px;
+}
+
+h2{
+	font-family:'Libre Franklin', sans-serif;
+	font-weight: 600;
+}
+
+h3{
+	font-family:'Libre Franklin', sans-serif;
+	font-weight: 500;
+}
+
+// Загальна стилізація для MobileFirst
+
+body{
+	min-width:373px;
+	
+
+}
+
+// Стилізація mobileFirst
+
+@media (min-width: 373px) and (max-width: 960px){
+	header{
+		min-width: 373px;
+		min-height:275px;
+		background-image: url('../img/Background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+			p, a {
+				font-size: 13px;
+			}
+			a{
+				color: white;
+				// text-decoration: none;
+			}
+
+	}
+	main .about p{
+		text-align: justify;
+		line-height: 15px;
+	}
+
+	.skills{
+		background-color: #FFFAF2;
+		img{
+			width: 224px;
+			height: 218px;
+		}
+	}
+
+	.portfolio h3{
+		font-size: 14px;
+		font-weight: 500;
+	}
+section .portfolio{
+	min-height: 404px;
+} 
+footer{
+	background-color: #FFFAF2;
+	a{
+		color: #333333;
+		text-decoration: none;
+		font-style: 14px;
+		font-weight: 400;
+	}
+}
+.grid{
+	display: grid;
+	row-gap:12.61px;
+	column-gap: 14.55px;
+	grid-template-columns:169.76px 123.69px ;
+	grid-template-rows: 69.85px 30.55px 69.85px;
+	& .gridimg_last{
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-start: 3;
+	}
+}
+footer{
+	font-size: 14px;
+}
+}

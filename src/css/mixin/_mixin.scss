@@ -1,0 +1,33 @@
+@mixin transition($tp, $td, $tdy,$ttf) {
+	transition-property: $tp;
+	transition-duration: $td;
+	transition-delay:$tdy;
+	transition-timing-function:$ttf;
+}
+
+@mixin background-image($bgc){
+	background-image:$bgc;
+}
+
+@mixin display-flex($d, $ff, $jc, $ai){
+	display:$d;
+	flex-flow:$ff;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+@mixin sizeBlock($w, $h){
+	width:$w;
+	height:$h;
+}
+
+@mixin animation($an, $ad, $ady, $afm, $atf ){
+	animation-name: $an;
+	animation-duration: $ad;
+	animation-fill-mode: $afm;
+	animation-delay: $ady;
+	animation-timing-function: $atf;
+}
+
+
+

@@ -1,0 +1,124 @@
+@import url(base/_base);
+@import url(mixin/_mixin.scss);
+
+// Підключення шрифтів
+
+body{
+	font-family:'Libre Franklin', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+}
+h1{
+	font-size: 64px;
+	font-weight: 400;
+}
+
+h2{
+	font-family:'Libre Franklin', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+h3{
+	font-family:'Libre Franklin', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+// Загальна стилізація для LG
+
+body{
+	min-width:960px;
+	
+
+}
+
+// Стилізація mobileFirst
+
+@media (min-width: 960px){
+	// .general{
+	// 	width: 1440px;
+	// }
+	.first{
+		min-width: 960px;
+		// max-width: 1440px;
+		height:100vh;
+		max-height: 768px;
+		background-image: url('../img/Background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		&	nav a {
+				text-decoration: none;
+			}
+		& li{
+				list-style-type: none;
+								&:hover{
+					font-weight: 700;
+				}
+		}
+		a{
+			color: white;
+		}
+
+
+
+	}
+	main .about p{
+		text-align: justify;
+		line-height: 30px;
+	}
+
+	.skills{
+		background-color: #FFFAF2;
+		img{
+			width: 350px;
+			height: 340px;
+		}
+		height: 693px;
+		// span {
+		// 	width: 600px;
+		// }
+	}
+	.portfolio{
+		height: 822px;
+		p {
+			width: 350px;
+			line-height: 30px;
+		}
+	}
+	.portfolio h3{
+		font-size: 18px;
+		font-weight: 600;
+	}
+section .portfolio{
+	min-height: 404px;
+} 
+footer{
+	background-color: #FFFAF2;
+	a{
+		color: #333333;
+		text-decoration: none;
+		font-style: 14px;
+		font-weight: 400;
+	}
+}
+.grid{
+	display: grid;
+	row-gap:26px;
+	column-gap: 30px;
+	grid-template-columns:350px 255px ;
+	grid-template-rows: 144px 63px 144px;
+	& .gridimg_last{
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-start: 3;
+	}
+}
+footer{
+	height: 528px;
+	font-size: 18px;
+}
+}
